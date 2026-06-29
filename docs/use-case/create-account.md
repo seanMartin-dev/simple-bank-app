@@ -23,7 +23,7 @@
 
 ### Alternate Flows
 - User enters invalid data
-    - System shows erro
+    - System shows error
     - ask again
 - User cancels
     - System returns to main menu
