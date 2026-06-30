@@ -1,4 +1,4 @@
-package main.java.com.bank;
+package com.bank;
 
 import java.util.concurrent.atomic.AtomicInteger;
 /**
@@ -72,6 +72,7 @@ public class Account {
      * 
      * @return the account balance
      */
+    
     
 
     @Override

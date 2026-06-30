@@ -1,20 +1,14 @@
-package main.java.com.bank;
+package com.bank;
 
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Welcome to the Bank of Java\nPress 1 to login\nPress 2 to create an account");
-        
-        // Create a scanner object to read input from the console
-        Scanner scanner = new Scanner(System.in);
 
-        // Read a string
-        String userAnswer = scanner.nextLine();
-        scanner.close();
+        // Create a welcome interface object
+        UserInterface ui= new UserInterface();
 
-        // Show output 
-        System.out.println("User chose: " + userAnswer);
+        ui.start();
 
         Account account1 = new Account("Sean", 5000);
         Account account2 = new Account("Bill", 10);
