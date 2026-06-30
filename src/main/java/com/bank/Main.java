@@ -14,9 +14,13 @@ public class Main {
         Account account2 = new Account("Bill", 10);
         Account account3 = new Account("Tom", 450);
 
-        System.out.println(account1);
-        System.out.println(account2);
-        System.out.println(account3);
+        Bank bankdb = new Bank();
+        bankdb.addAccount(account3);
+        bankdb.addAccount(account2);
+        bankdb.addAccount(account1);
+
+        System.out.println(bankdb.findAccountByName("Bill"));
+        
 
         try {
             account1.deposit(-1);

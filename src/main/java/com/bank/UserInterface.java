@@ -17,6 +17,11 @@ public class UserInterface{
 
     public void start() {
         showMenu();
+        createBankdb();
+    }
+
+    public void createBankdb() {
+        Bank bankdb = new Bank();
     }
       
     public void showMenu() {

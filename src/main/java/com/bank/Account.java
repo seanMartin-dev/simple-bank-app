@@ -29,6 +29,10 @@ public class Account {
         this.id = counter.getAndIncrement();
         this.ownerName = ownerName; 
         balance = initialBalance;
+    } 
+    
+    public String getName() {
+        return ownerName;
     }
 
     /**
